@@ -17,16 +17,24 @@ cd Realtime-dashboard
 npm install
 ```
 
-### 3️⃣ Set Up Environment Variables
+### 3️⃣ Set Up Firebase Realtime Database
+
+- Go to [Firebase Console](https://console.firebase.google.com/).
+- Create a new project.
+- Enable Realtime Database and set up the necessary rules.
+- Generate the Firebase config keys.
+- Copy the environment variables from Firebase.
+
+### 4️⃣ Set Up Environment Variables
 
 - Create a `.env.local` file in the root directory.
-- Copy the contents from `.env.example` and update the values.
+- Copy the contents from `.env.example` and update the values with the Firebase config.
 
 ```sh
 cp .env.example .env.local
 ```
 
-### 4️⃣ Run the Development Server
+### 5️⃣ Run the Development Server
 
 ```sh
 npm run dev
@@ -38,4 +46,3 @@ The app will be available at [http://localhost:3000](http://localhost:3000).
 
 You can also check out the deployed version here:\
 🔗 **[Realtime Dashboard](https://realtime-dashboard-two.vercel.app/)**
-
